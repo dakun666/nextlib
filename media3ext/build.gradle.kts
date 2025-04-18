@@ -69,9 +69,9 @@ afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("mavenJava") {
-                groupId = "io.github.anilbeesetti"
+                groupId = "com.b.w.mob.ui.videoplayer.lib"
                 artifactId = "nextlib-media3ext"
-                version = "1.0"
+                version = "1.1"
 
                 from(components["release"])
             }

@@ -29,13 +29,13 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 
     kotlinOptions {
         /// Set JVM target to 17
-        jvmTarget = JavaVersion.VERSION_17.toString()
+        jvmTarget = JavaVersion.VERSION_11.toString()
     }
 
     externalNativeBuild {
@@ -71,7 +71,7 @@ afterEvaluate {
             create<MavenPublication>("mavenJava") {
                 groupId = "com.b.w.mob.ui.videoplayer.lib"
                 artifactId = "nextlib-media3ext"
-                version = "1.1"
+                version = "1.2"
 
                 from(components["release"])
             }
